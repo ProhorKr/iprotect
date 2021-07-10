@@ -1,0 +1,26 @@
+.btn-main{
+    background: $primary;
+    height: 70px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Gilroy";
+    
+    &:hover{
+        background: #2086e6;
+        color: #a1d1fd;
+    }
+}
+
+.sect__buttons{
+    margin-bottom: 150px;
+}
+
+.button{
+
+    &__icon{
+        width: 26px;
+        height: 25px;
+        margin-right: 1rem;
+    }
+}

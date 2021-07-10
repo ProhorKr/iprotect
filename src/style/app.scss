@@ -1,0 +1,18 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~swiper/swiper-bundle.css';
+@import "core/config";
+
+@import "components/header",
+        "components/slider",
+        "components/buttons",
+        "components/about",
+        "components/icons",
+        "components/catalog",
+        "components/form",
+        "components/footer",
+        "components/catalog-category",
+        "components/breadcrumbs",
+        "components/pagination",
+        "components/product"
+        ;
+

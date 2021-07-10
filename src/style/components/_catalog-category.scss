@@ -1,0 +1,47 @@
+.catalog-category{
+
+    &__item-link{
+        text-decoration: none;
+
+    }
+}
+
+.item-card{
+
+    min-height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+
+    .card-img-top{
+        max-height: 250px;
+    }
+
+    h5{
+        margin-bottom: 30px;
+    }
+
+    .btn{
+        border: 1px solid $primary;
+        color: $primary;
+        cursor: pointer;
+
+        &:hover{
+            background: $primary;
+            color: white;
+        }
+    }
+
+    .card-body{
+        padding: 24px 28px;
+    }
+
+    .card-title{
+        font-size: 1.3rem;
+        color: $textBase;
+    }
+}
+
+.sect__catalog-category{
+    margin-bottom: 50px;
+}

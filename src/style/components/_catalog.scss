@@ -1,0 +1,57 @@
+.sect__catalog{
+
+    margin-bottom: 240px;
+
+    h2{
+        color: $primary;
+        font-size: 2rem;
+    }
+    
+}
+
+.category-item{
+    height: 312px;
+    font-size: 2rem;
+
+    &__wrapper{
+        background: white;
+        border-radius: 20px;
+        height: 100%;
+        width: 100%; 
+        padding: 60px 40px;
+    }
+
+    &__img{
+        position: absolute;
+    }
+
+    &--maski{
+        background: url("../assets/category-mask.jpg") no-repeat
+    }
+
+    &--respirator{
+        background: url("../assets/category-respirator.jpg") no-repeat
+    }
+
+    &--kombez{
+        background: url("../assets/category-kombez.jpg") no-repeat
+    }
+
+    &--halat{
+        background: url("../assets/category-halat.jpg") no-repeat
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.bg-mask{
+    background: url("../assets/bg-masks.png") no-repeat;
+    width: 1300px;
+    height: 1000px;
+    position: absolute;
+    top: -150px;
+    left: -340px;
+    z-index: -1;
+}

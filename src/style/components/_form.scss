@@ -1,0 +1,78 @@
+.sect__form{
+    height: 590px;
+    background: $primary url("../assets/bg-form-bottom.jpg") no-repeat;
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    h3{
+        color: white;
+    }
+
+    textarea{
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0.1px 1.5px 4.1px 1px rgba(20, 98, 112, 0.22);
+        background-color: rgba($color: #fff, $alpha: .33);
+        border: none;
+        resize: none;
+        height: 320px;
+        color: white;
+        padding: 15px;
+        outline: none;
+
+        &::placeholder{
+            color: rgba($color: #fff, $alpha: 0.75)
+        }
+    }
+
+    input{
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        padding: 20px 5px;
+        padding-top: 10px;
+        margin-bottom: 35px;
+        width: 90%;
+        outline: none;
+        color: white;
+
+        &::placeholder{
+            color: white;
+            opacity: 0.5;
+        }
+    }
+
+    button{
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+}
+
+.form{
+
+    &__personal-text{
+        color: white;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        font-size: 0.75rem;
+    }
+
+    &__person{
+        background: url('../assets/form-person.png') no-repeat;
+        width: 556px;
+        height: 616px;
+        position: absolute;
+        bottom: -75px;
+        right: 0;
+    }
+
+    &__col{
+        z-index: 1;
+    }
+}

@@ -1,0 +1,48 @@
+.footer{
+
+    &__logo{
+
+        img{
+            max-height: 70px;
+            max-width: 250px;
+        }
+    }
+
+    &__rekvizity{
+        color: $textBase;
+        opacity: 0.5;
+        font-size: 0.75rem;
+    }
+
+    &__polite{
+
+        a{
+            color: $textBase;
+            opacity: 0.7;
+        }
+    }
+
+    &__phone, &__mail{
+        color: $primary;
+        font-size: 1.15rem;
+        text-decoration: none;
+        margin-bottom: -8px;
+    }
+
+    
+
+    &__contacts{
+
+        text-align: right;
+
+        span{
+            font-size: 0.6rem;
+            color: $textBase;
+            display: block;
+        }
+
+        a{
+            display: block;
+        }
+    }
+}

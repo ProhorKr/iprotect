@@ -1,0 +1,22 @@
+.pagination{
+
+    .page-link{
+        border: none;
+        color: $primary;
+        background: transparent;
+
+        &--next{
+            background: #dbeeff;
+            color: #333333;
+            border-radius: 5px;
+        }
+    }
+
+    .page-item.active {
+
+        .page-link{
+            background: $primary;
+            border-radius: 4px;
+        }
+    }
+}

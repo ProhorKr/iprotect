@@ -1,0 +1,42 @@
+.about{
+
+    &__row{
+        z-index: 1;
+    }
+
+    &__text{
+
+        h2{
+            font-size: 2rem;
+        }
+        
+        p{
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__video{
+
+        video{
+            max-width: 100%;
+        }
+    }
+
+    
+}
+
+.sect__about{
+    margin-bottom: 100px;
+    
+}
+
+.bg-about{
+    background: url("../assets/bg-about.png") no-repeat;
+    width: 1300px;
+    height: 1000px;
+    position: absolute;
+    top: -150px;
+    right: -340px;
+    z-index: -1;
+}
