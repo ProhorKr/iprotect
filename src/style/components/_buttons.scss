@@ -14,6 +14,10 @@
 
 .sect__buttons{
     margin-bottom: 150px;
+
+    @include phone{
+        margin-bottom: 100px;
+    }
 }
 
 .button{

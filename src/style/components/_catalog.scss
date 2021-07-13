@@ -13,12 +13,74 @@
     height: 312px;
     font-size: 2rem;
 
+    @include phone{
+        height: 180px;
+    }
+
     &__wrapper{
         background: white;
         border-radius: 20px;
         height: 100%;
         width: 100%; 
-        padding: 60px 40px;
+        // padding: 60px 40px;
+        position: relative;
+        overflow: hidden;
+
+        @include phone{
+            font-size: 1.2rem;
+        }
+    }
+
+    &__hover-block{
+        width: 90px;
+        height: 100%;
+        background: $primary;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -90px;
+        transition: right 0.2s ease-in;
+
+        @include phone{
+            width: 155px;
+            height: 55px;
+            bottom: 0;
+            top: unset;
+            left: 0;
+            right: unset;
+            border-radius: 0 15px 0 0;
+        }
+
+        .hover-block__text{
+            transform: rotate(270deg);
+            color: white;
+            font-size: 1rem;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include phone{
+                transform: unset;
+                font-size: 0.7rem;
+            }
+
+            &::after{
+                content: '';
+                width: 23px;
+                height: 23px;
+                background: $primary url("../assets/hover-arrow-catalog.svg") no-repeat;
+                display: block;
+                margin-left: 10px;
+                transform: rotate(90deg);
+
+                @include phone{
+                    transform: unset;
+                }
+            }
+        }
     }
 
     &__img{
@@ -26,23 +88,48 @@
     }
 
     &--maski{
-        background: url("../assets/category-mask.jpg") no-repeat
+        background: white url("../assets/category-mask.png") no-repeat 220px 0px;
+
+        @include phone{
+            background-size: contain;
+            background-position: 150px 0px;
+        }
     }
 
     &--respirator{
-        background: url("../assets/category-respirator.jpg") no-repeat
+        background: white url("../assets/category-respirator.png") no-repeat 220px -60px;
+
+        @include phone{
+            background-size: 75%;
+            background-position: 130px -41px;
+        }
     }
 
     &--kombez{
-        background: url("../assets/category-kombez.jpg") no-repeat
+        background: white url("../assets/category-kombez.png") no-repeat 190px -105px;
+
+        @include phone{
+            background-size: 70%;
+            background-position: 140px -50px;
+        }
     }
 
     &--halat{
-        background: url("../assets/category-halat.jpg") no-repeat
+        background: white url("../assets/category-halat.png") no-repeat 230px -148px;
+
+        @include phone{
+            background-size: 60%;
+            background-position: 150px -95px;
+        }
     }
 
     &__link{
         text-decoration: none;
+
+        &:hover .category-item__hover-block{
+            right: 0;
+
+        }
     }
 }
 

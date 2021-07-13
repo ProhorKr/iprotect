@@ -8,36 +8,45 @@
     <title>Iprotect</title>
 </head>
 <body>
-    <header class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-4 d-flex logo">
+    <header class="py-5 navbar navbar-expand-lg">
+        <div class="container">         
+                <div class="col-4 d-flex logo navbar-brand">
                     <a class="logo__link me-3" href="/"><img class="logo_img me-3" src="assets/logo.png" alt=""></a>
                     <span class="logo__slogan">Производство средств<br> индивидуальной защиты</span>
                 </div>
-                <div class="col menu">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item"><a class="nav-link menu__link" href="/catalog">Каталог</a></li>
-                        <li class="nav-item"><a class="nav-link menu__link" href="/contacts">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 contacts d-flex flex-column align-items-end">
-                    <span class="contacts__text">Или позвоните</span>
-                    <a href="tel:+74959876543" class="contacts__phone">+7 (495) 987-65-43</a>
-                    <a href="#" class="contacts__form-link">Позвоните мне</a>
-                </div>
-            </div>
+                <button class="col-1 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col menu ">
+                        <ul class="nav navbar-nav justify-content-center align-items-center mt-2 mt-lg-0 mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link menu__link" href="/catalog">Каталог</a></li>
+                            <li class="nav-item"><a class="nav-link menu__link" href="/contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col contacts d-flex flex-column align-items-center align-items-lg-end ">
+                        <span class="contacts__text">Или позвоните</span>
+                        <a href="tel:+74959876543" class="contacts__phone">+7 (495) 987-65-43</a>
+                        <a href="#" class="contacts__form-link">Позвоните мне</a>
+                    </div>
+                </div>    
         </div>
     </header>
     <main>
         <section class="sect__slider">
             <div class="container">
+                <h1>Производство средств индивидуальной защиты</h1>
                 <div class="row">
-                    <div class="col-9 px-0">
+                    <div class="col-12 col-lg-9 px-2 px-lg-0">
                         <div class="slider swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="slider__img img-fluid" src="assets/slider1.jpg" alt="">
+                                    <picture>
+                                        <source media="(max-width: 400px)" srcset="assets/slider-mobile-1.jpg">
+                                        <img class="slider__img img-fluid" src="assets/slider1.jpg" alt="">
+                                    </picture>                                    
                                     <div class="slider__description-slide">
                                         <h4>Производство СИЗ</h4>
                                         Маски, респираторы, халаты, комбинезоны защитные
@@ -64,34 +73,34 @@
                             <div class="swiper-button-prev"></div>
                         </div>
                     </div>
-                    <div class="col-3 features">
-                        <div class="row flex-column justify-content-between ps-3">
-                            <div class="col-12 features__item d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-lg-3 features">
+                        <div class="row flex-column justify-content-between ps-lg-3 px-2 px-lg-0">
+                            <div class="col-12 features__item d-flex justify-content-lg-center align-items-center">
                                 <div class="row">
-                                    <div class="col-4 justify-content-center d-flex align-items-center">
+                                    <div class="col-3 col-lg-4 justify-content-center d-flex align-items-center">
                                         <img src="assets/v.jpg" alt="" >
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-9 col-lg-8">
                                         <span class="features__text">Современное оборудование</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 features__item d-flex justify-content-center align-items-center">
+                            <div class="col-12 features__item d-flex justify-content-lg-center align-items-center">
                                 <div class="row">
-                                    <div class="col-4 justify-content-center d-flex align-items-center">
+                                    <div class="col-3 col-lg-4 justify-content-center d-flex align-items-center">
                                         <img src="assets/v.jpg" alt="" >
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-9 col-lg-8">
                                         <span class="features__text">Производство находится в России</span>
                                     </div>
                                 </div>                                
                             </div>
-                            <div class="col-12 features__item d-flex justify-content-center align-items-center">
+                            <div class="col-12 features__item d-flex justify-content-lg-center align-items-center">
                                 <div class="row">
-                                    <div class="col-4 justify-content-center d-flex align-items-center">
+                                    <div class="col-3 col-lg-4 justify-content-center d-flex align-items-center">
                                         <img src="assets/v.jpg" alt="" >
                                     </div>
-                                    <div class="col-8">
+                                    <div class="col-9 col-lg-8">
                                         <span class="features__text">Соответствие тех. регламентам и ГОСТ’ам</span>
                                     </div>
                                 </div>                                
@@ -103,9 +112,9 @@
         </section>
         <section class="sect__buttons">
             <div class="container">
-                <div class="row">
-                    <a class="col-4 btn btn-main d-flex align-items-center me-5 justify-content-center" src="#"><img class="button__icon" src="assets/button-icon-card.svg" alt="">КАТАЛОГ  ТОВАРОВ</a>
-                    <a class="col-4 btn btn-main d-flex align-items-center justify-content-center" src="#"><img class="button__icon" src="assets/button-icon-dialog.svg" alt="">СВЯЗАТЬСЯ С НАМИ</a>
+                <div class="row gx-2 gx-lg-0">
+                    <a class="col-12 col-lg-4 btn btn-main d-flex align-items-center me-5 justify-content-center" src="#"><img class="button__icon" src="assets/button-icon-card.svg" alt="">КАТАЛОГ  ТОВАРОВ</a>
+                    <a class="col-12 d-none d-lg-flex col-lg-4 btn btn-main align-items-center justify-content-center" src="#"><img class="button__icon" src="assets/button-icon-dialog.svg" alt="">СВЯЗАТЬСЯ С НАМИ</a>
                 </div>
             </div>
         </section>
@@ -113,12 +122,13 @@
             <div class="container position-relative">
                 <div class="bg-about"></div>
                 <div class="row about__row">
-                    <div class="col-6 about__text">
-                        <h2 class="mb-3">Описание компании</h2>
+                    <h2 class="mb-3 d-lg-none">Описание компании</h2>
+                    <div class="col-12 col-lg-6 about__text order-2 order-lg-1">
+                        <h2 class="mb-3 d-none d-lg-block">Описание компании</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, harum, amet doloribus repellat sequi optio accusantium reiciendis quos deserunt sed corporis voluptatum earum minima nostrum aperiam itaque animi tenetur sapiente.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, harum, amet doloribus repellat sequi optio accusantium reiciendis quos deserunt sed corporis voluptatum earum minima nostrum aperiam itaque animi tenetur sapiente.</p>
                     </div>
-                    <div class="col-6 about__video">
+                    <div class="col-12 col-lg-6 about__video order-1 order-lg-2">
                         <video id="myVideo" preload="auto" controls>
                             <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'>
                             <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
@@ -134,16 +144,22 @@
                     <div class="row">
                         <div class="col-12 icons">
                             <div class="row py-4">
-                                <div class="col d-flex justify-content-start align-items-center">
-                                    <img class="me-2" src="assets/icon-pishevaya.png" alt="">
+                                <div class="col-12 col-lg-4 d-flex justify-content-start align-items-center icons__item">
+                                    <div class="icons__img-block">
+                                        <img class="me-5 me-lg-2 icons__img" src="assets/icon-pishevaya.png" alt="">
+                                    </div>                                    
                                     <span>Пищевая промышленность</span>
                                 </div>
-                                <div class="col d-flex justify-content-center align-items-center">
-                                    <img class="me-2" src="assets/icon-med.png" alt="">
+                                <div class="col-12 col-lg-4 d-flex justify-content-start justify-content-lg-center align-items-center icons__item">
+                                    <div class="icons__img-block">
+                                        <img class="me-5 me-lg-2 icons__img" src="assets/icon-med.png" alt="">
+                                    </div>
                                     <span>Медицина</span>
                                 </div>
-                                <div class="col d-flex justify-content-end align-items-center">
-                                    <img  class="me-2" src="assets/icon-individual.png" alt="">
+                                <div class="col-12 col-lg-4 d-flex justify-content-start justify-content0-lg-end align-items-center icons__item">
+                                    <div class="icons__img-block">
+                                        <img  class="me-5 me-lg-2 icons__img" src="assets/icon-individual.png" alt="">
+                                    </div>
                                     <span>Индивидуальные средства защиты</span>
                                 </div>
                             </div>
@@ -159,7 +175,7 @@
                     <h2 class="mb-4">Каталог товаров</h2>                    
                     <div class="col-12">
                         <div class="row gy-4">
-                            <div class="col-6 category-item pe-3">
+                            <div class="col-12 col-lg-6 category-item pe-3">
                                 <a href="#" class="category-item__link">
                                     <div class="category-item__wrapper p-4 category-item--maski">
                                         <div class="row">
@@ -167,21 +183,27 @@
                                                 Маски
                                             </div>
                                         </div>
+                                        <div class="category-item__hover-block">
+                                            <span class="hover-block__text">ВЕСЬ СПИСОК</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-6 category-item ps-3">
+                            <div class="col-12 col-lg-6 category-item ps-3">
                                 <a href="#" class="category-item__link">
                                     <div class="category-item__wrapper p-4 category-item--respirator">
                                         <div class="row">
                                             <div class="col-6">
                                                 Респираторы
                                             </div>
-                                        </div>                                    
+                                        </div>
+                                        <div class="category-item__hover-block">
+                                            <span class="hover-block__text">ВЕСЬ СПИСОК</span>
+                                        </div>                                 
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-6 category-item pe-3">
+                            <div class="col-12 col-lg-6 category-item pe-3">
                                 <a href="#" class="category-item__link">
                                     <div class="category-item__wrapper p-4 category-item--halat">
                                         <div class="row">
@@ -189,16 +211,22 @@
                                                 Халаты
                                             </div>
                                         </div>
+                                        <div class="category-item__hover-block">
+                                            <span class="hover-block__text">ВЕСЬ СПИСОК</span>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-6 category-item ps-3">
+                            <div class="col-12 col-lg-6 category-item ps-3">
                                 <a href="#" class="category-item__link">
                                     <div class="category-item__wrapper p-4 category-item--kombez" >                                    
                                         <div class="row">
                                             <div class="col-6">
                                                 Комбинезоны защитные
                                             </div>
+                                        </div>
+                                        <div class="category-item__hover-block">
+                                            <span class="hover-block__text">ВЕСЬ СПИСОК</span>
                                         </div>
                                     </div>
                                 </a>
@@ -216,15 +244,15 @@
                         <div class="row">
                             <h3>У вас есть вопросы?</h3>
                         </div>                 
-                        <form action="">
+                        <form action="" class="needs-validation">
                             <div class="row">
                                 <div class="col-6 pe-3 pt-3">                                    
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Ваш текст"></textarea>
                                 </div>
                                 <div class="col-4 align-items-center d-flex flex-column">
                                     <input type="text" name="name" id="" placeholder="Иванов Иван">
-                                    <input type="email" name="email" id="" placeholder="E-mail">
-                                    <input type="tel" name="tel" id="" placeholder="+7 900 111 22 33">
+                                    <input id="form_email" type="email" name="email" id="" placeholder="E-mail" required>
+                                    <input id="form_phone" type="tel" name="tel" id="" placeholder="+7 900 111 22 33" required>
                                     <button type="submit">ОТПРАВИТЬ</button>
                                     <span class="form__personal-text">Нажимая кнопку  «Отправить» вы принимаете
                                         «Соглашение об обработке персональных данных» </span>

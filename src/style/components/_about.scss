@@ -18,8 +18,13 @@
 
     &__video{
 
+        @include phone{
+            margin-bottom: 40px;
+        }
+
         video{
             max-width: 100%;
+            border-radius: 20px;
         }
     }
 
@@ -28,6 +33,14 @@
 
 .sect__about{
     margin-bottom: 100px;
+
+    h2{
+
+        @include phone{
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+    }
     
 }
 

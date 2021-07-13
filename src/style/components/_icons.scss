@@ -1,8 +1,26 @@
 .icons{
 
+    &__item{
+
+        @include phone{
+
+            margin-bottom: 30px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
     img{
-        max-width: 30px;
-        max-height: 32px;
+        width: 30px;
+        height: 32px;
+
+        @include phone{
+            width: 45px;
+            height: 45px;
+        }
     }
 
     span{
