@@ -7,6 +7,10 @@
 
     .wrapper{
         padding: 45px 50px;
+
+        @include phone{
+            padding: unset;
+        }
     }
 }
 
@@ -17,12 +21,20 @@
         color: $textBase;
         line-height: 2.4rem;
         margin-bottom: 30px;
+
+        @include phone{
+            font-size: 1.5rem;
+        }
     }
 
     &__carousel{
         width: 360px;
         height: 300px;
         margin-bottom: 10px;
+
+        @include phone{
+            width: 336px;
+        }
     }
 
     &__thumb.swiper-container {
@@ -75,6 +87,11 @@
     &__button-order{
         width: 90%;
 
+        @include phone{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
         .btn{
             background: $primary;
             text-transform: uppercase;
@@ -91,6 +108,22 @@
         color: #8b8b8b;
         line-height: 1.5rem;
         margin-bottom: 40px;
+
+        @include phone{
+            display: none;
+        }
+
+        &-mobile{
+            display: none;
+
+            @include phone{
+                display: block;
+                color: #8b8b8b;
+                line-height: 1.5rem;
+                margin-bottom: 30px;
+                font-size: 1rem;
+            }            
+        }
     }
 
     &__properties{
@@ -101,6 +134,10 @@
     h3{
         font-size: 1rem;
         font-weight: bold;
+
+        @include phone{
+            margin-bottom: 30px;
+        }
     }
 
     &__propertie-item-title{
@@ -113,15 +150,27 @@
             margin: 0 -99% 0 3px;
             vertical-align: baseline;
             border-bottom: 2px dotted #8b8b8b;
+
+            @include phone{
+                display: none;
+            }
          }
     }
 
     &__propertie-item-value{
         padding-left: 5px;
         background: white;
+
+        @include phone{
+            padding-left: 0;
+        }
     }
 
     &__properties-item{
         margin-bottom: 10px;
+
+        @include phone{
+            margin-bottom: 20px;
+        }
     }
 }
