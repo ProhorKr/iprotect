@@ -375,7 +375,8 @@
                                 <a href="" class="product__link-instruction product__link-instruction--serificate">СЕРТИФИКАТЫ</a>
                             </div>
                             <div class="product__button-order">
-                                <button class="compred btn">Запросить коммерческое предложение</button>
+                                <button class="compred btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Запросить коммерческое предложение</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -431,7 +432,7 @@
         <div class="container py-5">
             <div class="row footer">
                 <div class="col-12 col-lg-4">
-                    <div class="footer__logo d-flex d-lg-none justify-content-center align-items-center">
+                    <div class="footer__logo d-flex d-lg-block justify-content-center align-items-center">
                         <img src="assets/logo.png" alt="">
                     </div>
                     <span class="footer__rekvizity">ООО «ИнтерЛайн» ОГРН 1075031006368  ИНН  5031076070</span>
@@ -447,6 +448,33 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Запросить коммерческое предложение</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Имя:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Телефон:</label>
+                  <input type="tel" class="form-control" id="recipient-tel">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
